@@ -1,14 +1,16 @@
-
+// Partition of the Memory
 public class Partition {
-	private int num;
-	private int size;
-	private String status;
-	private Job currentJob;
+	private int num; // Partition #
+	private int size; // Size of the partition
+	private String status; // Free or Busy
+	private Job currentJob; // Current job occupying partition
 
+	
+	// (partition #, Size of partition)
 	public Partition(int n, int s) {
 		num = n;
 		size = s;
-		status = "Free";
+		status = "Free"; // default
 	}
 
 	// Setters and Getters

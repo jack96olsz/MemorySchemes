@@ -1,15 +1,16 @@
 // For individual job attributes
 public class Job {
-	private String name;
-	private int size;
-	private int time;
-	private String status;
+	private String name; // name of job
+	private int size; // size of job
+	private int time; // time to complete job
+	private String status; // Running or Not Running
 
+	// (name, size, time)
 	public Job(String n, int s, int t) {
 		name = n;
 		size = s;
 		time = t;
-		status = "Not Running";
+		status = "Not Running"; // default
 	}
 
 	// Setters and Getters
